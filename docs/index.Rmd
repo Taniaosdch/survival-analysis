@@ -163,7 +163,7 @@ survdiff(Surv(turnover$stag, turnover$event) ~ turnover$gender)
 
 
 ########################
-# Cox HP Model
+# Cox proportional-hazards model
 ########################
 ```{r}
 cox_model <- coxph(Surv(turnover$stag, turnover$event) ~ 
@@ -237,41 +237,7 @@ H0: Hazards are proportional
 plot(zph)
 ```
 
-```{r}
 
-
-```
-
-
-
-```{r}
-
-
-```
-
-
-
-
-```{r}
-
-
-```
-
-
-
-
-```{r}
-
-
-```
-
-
-
-
-```{r}
-
-
-```
 
 
 
